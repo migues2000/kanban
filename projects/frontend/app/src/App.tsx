@@ -1,20 +1,10 @@
-import { Button } from './components/ui/button';
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './components/ui/card';
+import { AppHeader } from './components/layout/app-header';
 
 export function App() {
   return (
-    <div className='w-full min-h-screen flex flex-col justify-center items-center'>
-      <Card className='w-80'>
-        <CardHeader>
-          <CardTitle>Kanban</CardTitle>
-          <CardDescription>The best Kanban app</CardDescription>
-        </CardHeader>
-
-        <CardFooter className='flex flex-row justify-between'>
-          <Button variant='outline'>Hello World!</Button>
-          <Button>Hello World!</Button>
-        </CardFooter>
-      </Card>
+    <div className='flex flex-col items-center w-full h-screen bg-zinc-100'>
+      <AppHeader />
+      <div className='flex flex-row items-start flex-1 gap-6 p-12'></div>
     </div>
   );
 }
